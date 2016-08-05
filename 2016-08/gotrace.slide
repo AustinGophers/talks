@@ -1,0 +1,53 @@
+GoTrace - Visualize Go Code
+One of the Coolest Tools Presented at GopherCon 2016
+4 Aug 2016
+
+Zachary Keener
+Developer at Agrarian Labs
+@Zak_Keener
+blog.leaf.ag
+
+
+* Great GopherCon Talks
+
+GopherCon 2016 Highlights
+- “Visualizing Concurrency” by Ivan Danyliuk (GoTrace)
+- “Go Without the Operating System” by Bernerd Schaefer
+- “GoGuru” by Alan Donovan
+- “GoMobile as the Backbone of Lantern for Android” by Jose Nieto
+- “Don’t Check Errors, Handle Them” by Dave Cheney
+- “Go For Data Science” by Daniel Whitenack
+- “The Design of the Go Assembler” by Rob Pike
+- “The Go Gopher: A Character Study” by Renee French
+
+
+* GoTrace - See Concurrency Go
+
+Shows concurrency in your go code
+
+Different colors of goroutines represent different states:
+
+red - blocked state
+green - unblocked
+yellow - unblocked and using CPU
+
+Colors of goroutines' connections and sendings over the channels are the same.
+
+* Uses `runtime/trace`
+
+.code code/basic_fmt.go
+
+* Simple Example - No Concurrency
+
+.code code/plain.go
+
+* Add a Little Concurrency
+
+.code code/hello.go
+
+* More Concurrency
+
+.code code/pingpong.go
+
+
+

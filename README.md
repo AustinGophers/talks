@@ -16,7 +16,7 @@ June 29, 2016
 May 26, 2016
 ------------
 * Performance Tuning - [Jud White](https://github.com/judwhite)
-* [Go beyond PowerPoint with Present!](http://go-talks.appspot.com/github.com/AustinGophers/talks/2016-04/go-present.slide) - [Zachary Keener](https://github.com/falafelizer)
+* [Go beyond PowerPoint with Present!](http://go-talks.appspot.com/github.com/AustinGophers/talks/2016-05/go-present.slide) - [Zachary Keener](https://github.com/falafelizer)
 
 April 21, 2016
 --------------
@@ -25,4 +25,4 @@ April 21, 2016
 March 29, 2016
 -------------
 * Go + Music - [Brian Sorahan](https://github.com/briansorahan)
-* [Gomobile: Unifying go code](http://go-talks.appspot.com/github.com/AustinGophers/talks/2016-06/slides.slide) - [Zachary Keener](https://github.com/falafelizer)
+* [Gomobile: Unifying go code](http://go-talks.appspot.com/github.com/AustinGophers/talks/2016-03/slides.slide) - [Zachary Keener](https://github.com/falafelizer)

@@ -1,0 +1,62 @@
+Go beyond PowerPoint with Present!
+Go Basics: golang.org/x/tool/present
+26 May 2016
+
+Zachary Keener
+Developer at Agrarian Labs
+@Zak_Keener
+blog.leaf.ag
+
+* Why?
+
+Easy if you're used to working in a text editor all day.
+Gopher flavored markdown.
+Playground in your slides.
+
+* Looks like...
+
+A .slide hello world!
+.code code/helloworldslide.go
+ .code code/helloworldslide.go
+
+* .play, not work!
+
+Now a _real_ hello... //HL
+
+.play code/helloworld.go /func main/,/^}/
+
+`.play code/helloworld.go /func main/,/^}/`
+`.play code/helloworld.go /START OMIT/,/END OMIT/`
+
+(and you can edit it!)
+
+* Pretty things
+
+.background image/gopher-lanczos3.jpg
+.video video/gopher.mp4 video/mp4 400 600
+ .video and .background
+
+* Extra goodies
+
+Highlighting code
+.code code/helloworld.go /func gophers/,/^}/
+
+Numbered code with flags!!!
+.play -numbers code/helloworld.go /func main/,/^}/
+
+* And more...
+
+Images!
+.image image/dream_7eab2bda9d.jpg
+.caption via Deep Dream Generator
+.link deepdreamgenerator.com
+
+
+* Internet interaction
+
+ .html file.html
+.iframe http://www.w3schools.com/tags/tag_iframe.asp
+ .iframe
+
+
+

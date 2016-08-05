@@ -1,0 +1,47 @@
+Poll: Who were works with mobile on a daily basis?
+Slides:
+
+
+Who am I and why am I talking about gomobile?
+My name is Zak.
+I'm an intern at leaf testing languages, frameworks, and tools to build cross-platform
+    mobile tools, minimizing the number of new technologies leaf developers have to use.
+For the past 3 months, I've been building a blackbox application for Android using React-Native
+    and gomobile, with a thin layer of Java in between.
+<Slide>
+Tools I've been using:
+- React-Native
+- Gomobile
+- AltBeacon Java SDK
+</Slide>
+
+What is gomobile?
+   "A tool that lets you turn go code into something useful for an ARM device running Android or iOS"
+      Note: Will not work on Genymotion without modification
+2. What have I used gomobile for?
+   Leaf's backend is written in go.
+   We had docs with lots of go code, our backend is very experienced in go, and go was easy to
+      learn as a (very) junior developer. In order to prototype quickly, I wanted to
+      reuse as much go code as possible. Gomobile allowed me to reuse what had been built and
+      recorded in the docs.
+Why use gomobile?
+   Keep writing go code
+   Reuse your business logic in your applications
+2. What should you know before using gomobile?
+Limited accessibility to native components:
+   What you can access with gomobile:
+   Internet, audio, motion sensors, graphics with OpenGL
+   What you can't access with gomobile:
+   	GPS, Bluetooth
+Problems can be "ungoogleable"
+   If you run into a problem, chances are much greater that it's unique to your system and
+      will take you writing your own fixes, using hacky solutions, or waiting for an update.
+
+Now that you've decided to use gomobile, you have to make a decision: How do you want to use it?
+
+Native applicaiton: gomobile build
+	Example
+   SDK applciation: gomobile bind
+	Example
+4.
+5.

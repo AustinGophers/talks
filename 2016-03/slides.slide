@@ -1,0 +1,130 @@
+Gomobile: Unifying go code
+The who, what, when, where, why, and how of Gomobile
+29 Mar 2016
+Tags: gomobile, android, ios, mobile
+
+Zak Keener
+Software Intern, Agrarian Labs LLC
+zkeener@leaf.ag
+@Zak_Keener
+
+* Poll: Who works on mobile apps on a daily basis?
+
+
+* Goal of this talk: Overview and Insight on 4 Months of Using Gomobile
+
+
+* Who am I?
+Student at University of Texas at Austin, studying computer science
+
+Total time spent with:
+
+- Go: 5 months ago
+- Gomobile: 4 months
+
+Building a _cross-platform_ app at Leaf using Gomobile for 4 months
+
+
+* What is Gomobile?
+Gomobile lets you take your Go code, and put it on an Android or iOS device.
+
+*Example*: Ivy
+.image ./image/Ivy.png
+
+
+* Why should you care?
+
+Reuse your go code
+
+Write one cross-platform library for Android & iOS
+
+Use go code to create one unified system (server/client)
+
+Your Go backend team can write mobile code!
+
+* When was gomobile released?
+
+golang/x/mobile released in Go 1.4 (Android)
+
+iOS architecture (darwin/arm64) support added in Go 1.5
+
+Lots of bug fixes and small UI packages added in Go 1.6
+
+
+* So you've decided to make an app with Gomobile...
+
+** Warning: Bugs ahead may not be Googleable
+
+
+* Build v Bind
+
+Build
+
+- All Go code
+
+Bind
+
+- Go bindings to Java/ObjC
+
+
+* Build: Native Apps
+
+golang.org/x/mobile...
+
+- /audio
+- /network
+- /exp/sprite
+- /exp/sensor (accelerometer, gyroscope, magnetometer)
+- /gl (OpenGL ES 2)
+
+ gomobile build ./flappy #android
+ gomobile build -target=ios ./flappy #ios
+
+ gomobile install ./flappy #android
+
+
+* Bind: Create a Shared Library
+
+Limited Types
+
+- Signed integer, floating point, string, and boolean
+
+- Byte slice types (not passed in as function arguments)
+
+- Functions must return either no results, one result, or two results where the type of the second is the built-in 'error' type.
+
+- Any interface type
+
+- Any struct type
+
+
+* Bind: Strategy
+
+Write (or reuse) your business logic in Go
+
+Write UI in React Native or other cross-platform framework
+
+Thin in-between layer of Android or Obj-C/Swift
+
+- AltBeacon Java SDK -> Go
+- GPS, Bluetooth Android Libraries -> Go
+
+ gomobile bind -target=ios ./golib
+ gomobile bind -target=android ./golib
+
+
+* Bind: File Structure (Android demo)
+
+- Configuring your Gradle scripts is tedious but necessary
+
+- Your Go mobile library must be _inside_ your Go path
+
+- Building can take a while...
+
+
+* Future
+
+golang.org/x/exp/shiny : more UI?
+WebView?
+
+

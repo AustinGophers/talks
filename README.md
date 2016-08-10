@@ -8,6 +8,7 @@ Click any of the presentations below to view the slide shows or pdf.
 August 4, 2016
 --------------
 * [GopherCon 2016 Recap: GoTrace](http://go-talks.appspot.com/github.com/AustinGophers/talks/2016-08/gotrace.slide) - [Zachary Keener](https://github.com/falafelizer)
+* [Meetup Recap](https://blog.leaf.ag/north-austin-golang-meetup-recap-gotrace-best-of-gophercon-hiring-go-developers-a86b96893ae8#.wgfub0pp9)
 
 June 29, 2016
 -------------
